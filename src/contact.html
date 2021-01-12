@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>WoW KeyBoard</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/22a90a649f.js" crossorigin="anonymous">
+	</script>
+</head>
+
+<body>
+	<header>
+		<div id="navbar">
+			<h1 class='subtitle'>
+				<i class="fas fa-keyboard"></i>
+                <a href="index.html"> WoWKeyboard</a>
+      </h1>
+    </div>
+    <p>Please provide your contact information in below form. We'll get back to you shortly</p>
+  </header>
+  <div id='form-block'>
+    <form action="https://httpbin.org/post" method="post">
+        <label for="contactus-name">Name:</label>
+        <br>
+        <input name="Name" id="contactus-name" type="text" required>
+        <br>
+        <label for="contactus-email">Email:</label>
+        <br>
+        <input name="Email" id="contactus-email" type="email" required>
+        <br>
+        <label for="contactus-address">Address:</label>
+        <br>
+        <input name="Address" id="contactus-address" type="text" required>
+        <br>
+        <label for="contactus-city">City:</label>
+        <br>
+        <input name="City" id="contactus-city" list="cities" required>
+        <datalist id="cities">
+            <option label="Barrie" value="Barrie"></option>
+	          <option label="Calgary" value="Calgary"></option>
+            <option label="Charlottetown" value="Charlottetown"></option>
+            <option label="Chibougamau" value="Chibougamau"></option>
+            <option label="Chilliwack" value="Chilliwack"></option>
+            <option label="Cold Lake" value="Cold Lake"></option>
+            <option label="Dorval" value="Dorval"></option>
+            <option label="Edmonton" value="Edmonton"></option>
+            <option label="Flin Flon" value="Flin Flon"></option>
+            <option label="Hamilton" value="Hamilton"></option>
+            <option label="Iqualuit" value="Iqualuit"></option>
+            <option label="Ottawa" value="Ottawa"></option>
+            <option label="Miramichi" value="Miramichi"></option>
+            <option label="Montreal" value="Montreal"></option>
+            <option label="Red Deer" value="Red Deer"></option>
+            <option label="St. John" value="St. John"></option>
+            <option label="St. John's" value="St. John's"></option>
+            <option label="Toronto" value="Toronto"></option>
+            <option label="Vancouver" value="Vancouver"></option>
+            <option label="Whitehorse" value="Whitehorse"></option>
+            <option label="Winnipeg" value="Winnipeg"></option>
+            <option label="Yellowknife" value="Yellowknife"></option>
+        </datalist>
+        <br>
+        <label for="contactus-zipcode">Postal Code:</label>
+        <br>
+        <input 
+          name="Zipcode"
+          id="contactus-zipcode"
+          type="text"
+          pattern="[a-zA-Z]\d[a-zA-Z] ?\d[a-zA-Z]\d"
+          required
+        >
+        <br>
+        <div>
+            <input type="radio" class="form-type" name="contact" value="question" required>
+            <label for="contactChoice1">Question</label>
+
+            <input type="radio" class="form-type" name="contact" value="comment">
+            <label for="contactChoice2">Comment</label>
+
+            <input type="radio" class="form-type" name="contact" value="order-problem">
+            <label for="contactChoice3">Order Problem</label>
+        </div>
+        <div id="contactus-orderno-box">
+          <label for="contactus-orderno">Order No.</label>
+          <br>
+          <input name="OrderNo" id="contactus-orderno">
+        </div>
+        <label for='contactus-wowkeyboard'>Write Us The Details:</label>
+        <br>
+      <div id="text-flex">
+        <textarea required></textarea>
+        <input name="Hidden" id="contactus-wowkeyboard" value="Kevin Kim" hidden>
+        <button id='form-submit' type="submit">Submit</button>
+      </div>
+    </form>
+  </div>  
+  <script type="text/javascript" src="contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,139 @@
+html {
+  background: url("images/jay-zhang-dF0nne1hnzQ-unsplash.jpg");
+  background-size: auto;
+}
+
+body {
+  height: 80%;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+ul {
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtitle {
+  font-family: 'Lobster', cursive;
+  text-align: center;
+	border-bottom: 3px solid #f1f1f1;
+	padding-bottom: 20px;
+}
+
+header p {
+  text-align: center;
+  border-bottom: 3px solid #f1f1f1;
+  padding-bottom: 20px;
+}
+
+p, #navbar, #i-name, #i-price, h3, label, .sns-icon {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 10px;
+}
+
+.container {
+  text-align: center;
+}
+
+#navbar-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+#item-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.card {
+  list-style-type: none;
+  flex-basis: 30%;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-bottom: 10px;
+  background: white;
+  border: 1px #CDFFFC solid;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.footer {
+  background-color: white;
+  border: 1px solid black;;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+}
+
+#navbar {
+  width: 100%;
+}
+
+.sns-container {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.sns-icon {
+  margin: 0 10px;
+}
+
+.sns-icon i {
+  font-size: 15px;
+}
+
+#form-block {
+  display: block;
+  background: rgb(0, 0, 0, 0.35);
+  width: 50%;
+  margin: auto;
+}
+
+#contactus-orderno-box {
+  display: none;
+}
+
+textarea {
+  width: 75%;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-left: 10px;
+}
+
+#text-flex {
+  display: flex;
+}
+
+#form-submit {
+  height: 20px;
+  margin: auto;
+}
